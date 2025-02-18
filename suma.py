@@ -8,9 +8,11 @@ Autor: Gabriela164
 '''
 
 def suma(a, b):
+    if not isinstance(a, (int, float)) or not isinstance(b, (int,float)):
+        return "Error: ambos valores deben ser números"
     return a + b
 
-print("La suma de 3 y 5 es: ", suma(3, 5))
+print("La suma de 3 y 5 es: ", suma("2","1"))
 
 
 
